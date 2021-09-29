@@ -13,22 +13,16 @@ class PageAdapter(fragmentManager: FragmentManager):FragmentPagerAdapter(fragmen
         else if(position==1){
             return AddFragment()
         }
-        else if(position==2){
-            return ProfileFragment()
-        }
         else{
             return ProfileFragment()
         }
 
 
 
-
-
-
     }
 
-    override fun getCount(): Int { //우리가 가지고있는 페이지는 5개 즉 int는 5
-       return 4
+    override fun getCount(): Int {
+       return 3
     }
 
 }
